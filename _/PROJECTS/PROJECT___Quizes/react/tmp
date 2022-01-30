@@ -1,0 +1,104 @@
+import React from 'react'
+import { render } from 'react-dom'
+import json_oc from "../jsons/oc.json"
+
+
+export default class App extends React.Component{
+    constructor(props){
+        super(props)
+        let {type,  json} = props
+
+        const blockComponents = {
+            consigne:{},
+            question:{},
+            choices:{},
+            responses:{},
+            indice:{},
+            explanation:{},
+            validation:{},
+        }
+        // alert(type)
+        // console.log(json)
+
+        console.log(json_oc)
+        let quizPartie1 = json_oc[0]
+        
+        quizPartie1 = quizPartie1.map((e,i)=>{
+            return [
+                blockComponents.question = this.getQuestion(e, i),
+                blockComponents.choices = this.getChoices(e, i)
+            ]
+        })
+
+    }
+    
+
+    getConsigne = () => {
+        
+    }
+
+    getQuestion = (quizFrame, index) => {
+        return (
+            <p response_={e.explain}>{unescape(quizFrame.question_more)}</p>
+        )
+    }
+
+    getChoices = (quizFrame, index) => {
+        let checkbox = quizFrame.responses.filter(e=>e==1).length > 1 ? true : false
+        return (
+            <form>
+                {quizFrame.choices.map((e,i)=>{
+                    <>
+                        <label for={"question"+index+"_"+i}>{e}</label>
+                        <input name={"question"+index+"_"+i} type={checkbox ? "checkbox" : "radio"} />
+                    </>
+                })}
+            </form>
+        )
+    }
+
+    getResponse_ = (quizFrame, index) => {
+
+    }
+
+    getIndices = (quizFrame, index) => {
+
+    }
+    
+    getExplanation = (quizFrame, index) => {
+
+    }
+
+    getValidation = (quizFrame, index) => {
+
+    }
+
+
+    render(){
+        return (
+            <>
+                <header className="navbar navbar-expand-sm navbar-light bg-primary">
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#">primary</a>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarID">
+                            <div className="navbar-nav">
+                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link" aria-current="page" href="#">un</a>
+                                <a className="nav-link" aria-current="page" href="#">Deux</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    {quizPartie1.map(e=>e)}
+                </main>
+
+            </>
+        )
+    }
+}
