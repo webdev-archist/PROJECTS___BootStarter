@@ -1,0 +1,30 @@
+[submodule "assets/SCSS-BEM____ArchitectureBlockElementModifier"]
+	path = assets/SCSS-BEM____ArchitectureBlockElementModifier
+	url = https://github.com/webdev-archist/SCSS-BEM____ArchitectureBlockElementModifier
+[submodule "_/builders/PROJECTS___CJS"]
+	path = _/builders/PROJECTS___CJS
+	url = https://github.com/webdev-archist/PROJECTS___CJS/
+[submodule "_/PROJECTS/PROJECTS__Quizes"]
+	path = _/PROJECTS/PROJECTS__Quizes
+	url = https://github.com/webdev-archist/PROJECTS__Quizes
+[submodule "_/PROJECTS/WEBPROJECT__jlpt"]
+	path = _/PROJECTS/WEBPROJECT__jlpt
+	url = git@github.com:webdev-archist/WEBPROJECT__jlpt.git
+[submodule "_/PROJECTS/OCR_MENTOR/OC__P2"]
+	path = _/PROJECTS/OCR_MENTOR/OC__P2
+	url = git@github.com:achicyr/OC__P2.git
+[submodule "_/PROJECTS/OCR_MENTOR/OC__P3"]
+	path = _/PROJECTS/OCR_MENTOR/OC__P3
+	url = git@github.com:achicyr/OC__P3.git
+[submodule "_/PROJECTS/OCR_MENTOR/0_ENV"]
+	path = _/PROJECTS/OCR_MENTOR/0_ENV
+	url = https://github.com/achicyr/0_ENV
+[submodule "_/PROJECTS/OCR_MENTOR/1__HTML"]
+	path = _/PROJECTS/OCR_MENTOR/1__HTML
+	url = git@github.com:achicyr/1__HTML.git
+[submodule "_/PROJECTS/OCR_MENTOR/2__CSS"]
+	path = _/PROJECTS/OCR_MENTOR/2__CSS
+	url = git@github.com:achicyr/2__CSS.git
+[submodule "_/PROJECTS/OCR_MENTOR/3__JavaScript"]
+	path = _/PROJECTS/OCR_MENTOR/3__JavaScript
+	url = git@github.com:achicyr/3__JavaScript.git
