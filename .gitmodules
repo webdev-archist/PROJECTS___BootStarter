@@ -28,3 +28,6 @@
 [submodule "_/PROJECTS/OCR_MENTOR/3__JavaScript"]
 	path = _/PROJECTS/OCR_MENTOR/3__JavaScript
 	url = git@github.com:achicyr/3__JavaScript.git
+[submodule "_/PROJECTS/OC__frontend"]
+	path = _/PROJECTS/OC__frontend
+	url = git@github.com:achicyr/OC__frontend.git
