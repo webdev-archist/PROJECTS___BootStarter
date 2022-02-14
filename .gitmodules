@@ -31,3 +31,6 @@
 [submodule "_/PROJECTS/OC__frontend"]
 	path = _/PROJECTS/OC__frontend
 	url = git@github.com:achicyr/OC__frontend.git
+[submodule "_/PROJECTS/mapDOM"]
+	path = _/PROJECTS/mapDOM
+	url = git@github.com:webdev-archist/mapDOM.git
