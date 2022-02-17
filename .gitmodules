@@ -34,3 +34,6 @@
 [submodule "_/PROJECTS/mapDOM"]
 	path = _/PROJECTS/mapDOM
 	url = git@github.com:webdev-archist/mapDOM.git
+[submodule "_/PROJECTS/generateCVs/generatorsCollection/cbyl"]
+	path = _/PROJECTS/generateCVs/generatorsCollection/cbyl
+	url = https://github.com/webdev-archist/cbyl
