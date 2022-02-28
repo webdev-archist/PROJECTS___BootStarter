@@ -1,12 +1,9 @@
 [submodule "assets/SCSS-BEM____ArchitectureBlockElementModifier"]
 	path = assets/SCSS-BEM____ArchitectureBlockElementModifier
-	url = https://github.com/webdev-archist/SCSS-BEM____ArchitectureBlockElementModifier
+	url = git@github.com:webdev-archist/SCSS-BEM____ArchitectureBlockElementModifier.git
 [submodule "_/builders/PROJECTS___CJS"]
 	path = _/builders/PROJECTS___CJS
-	url = https://github.com/webdev-archist/PROJECTS___CJS/
-[submodule "_/PROJECTS/PROJECTS__Quizes"]
-	path = _/PROJECTS/PROJECTS__Quizes
-	url = https://github.com/webdev-archist/PROJECTS__Quizes
+	url = git@github.com:webdev-archist/PROJECTS___CJS.git
 [submodule "_/PROJECTS/WEBPROJECT__jlpt"]
 	path = _/PROJECTS/WEBPROJECT__jlpt
 	url = git@github.com:webdev-archist/WEBPROJECT__jlpt.git
@@ -18,7 +15,7 @@
 	url = git@github.com:achicyr/OC__P3.git
 [submodule "_/PROJECTS/OCR_MENTOR/0_ENV"]
 	path = _/PROJECTS/OCR_MENTOR/0_ENV
-	url = https://github.com/achicyr/0_ENV
+	url = git@github.com:achicyr/0_ENV.git
 [submodule "_/PROJECTS/OCR_MENTOR/1__HTML"]
 	path = _/PROJECTS/OCR_MENTOR/1__HTML
 	url = git@github.com:achicyr/1__HTML.git
@@ -31,9 +28,12 @@
 [submodule "_/PROJECTS/OC__frontend"]
 	path = _/PROJECTS/OC__frontend
 	url = git@github.com:achicyr/OC__frontend.git
-[submodule "_/PROJECTS/mapDOM"]
-	path = _/PROJECTS/mapDOM
-	url = git@github.com:webdev-archist/mapDOM.git
 [submodule "_/PROJECTS/generateCVs/generatorsCollection/cbyl"]
 	path = _/PROJECTS/generateCVs/generatorsCollection/cbyl
-	url = https://github.com/webdev-archist/cbyl
+	url = git@github.com:webdev-archist/cbyl.git
+[submodule "_/builders/myBoilerplate"]
+	path = _/builders/myBoilerplate
+	url = git@github.com:webdev-archist/myBoilerplate.git
+[submodule "_/builders/PROJECTS___mapDOM"]
+	path = _/builders/PROJECTS___mapDOM
+	url = git@github.com:webdev-archist/PROJECTS___mapDOM.git
