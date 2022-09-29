@@ -37,3 +37,6 @@
 [submodule "_/builders/PROJECTS___mapDOM"]
 	path = _/builders/PROJECTS___mapDOM
 	url = git@github.com:webdev-archist/PROJECTS___mapDOM.git
+[submodule "_/PROJECTS/WEBDEV_Portfolio_react"]
+	path = _/PROJECTS/WEBDEV_Portfolio_react
+	url = git@github.com:webdev-archist/WEBDEV_Portfolio_react.git
