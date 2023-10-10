@@ -1,0 +1,522 @@
+@import "./main.scss";
+
+
+
+
+
+.slick-slider.slick-initialized{
+  width: calc(100% + 4em);
+  margin-left: -2em;
+  box-shadow: 0 0 10px 1px;
+  border: 1px solid;
+  >button{
+    background:brown;
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    &::before{
+      padding:.5em;
+    }
+    &:first-of-type{
+        border-radius: 100px 0 0 100px;
+    }
+    &:last-of-type{
+      border-radius: 0 100px 100px 0;
+    }
+  }
+  >div.slick-list{
+    height: 700px !important;
+    >.slick-track{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      >div.slick-slide{
+        height: 100%;
+        >div{
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+          >section{
+            height: 100%;
+            width: 45%;
+            >h1{}
+            >h4{}
+            >p{}
+            >img{object-fit: contain;}
+          }
+        }
+      }
+    }
+  }
+  >ul{position: relative;bottom:0;}
+}
+
+/***********************************/
+/***********************************/
+/***********************************/
+*{box-sizing: border-box;}
+body{}
+h2{
+
+    padding: 0.5em !important;
+    padding-left: 2em !important;
+    color: white;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,0) .5%, rgba(255,0,0,1) 1%, rgba(255,255,255,0) 1.5%, rgba(255,0,0,1) 2%, rgba(255,255,255,0) 2.5%, rgba(223,142,55,1) 4%, rgba(93,9,121,0.9) 50%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+}
+
+
+
+body{
+  >header{
+    >a{
+      display: flex;
+      align-items:center;
+      >img{height:5em;}
+      >hgroup{
+          text-align:center;
+          >h1{font-size:2.5em;margin:0;}
+          >h2{font-size:1.5em;margin:.5em 0 0;}
+      }
+    }
+    >section{
+      position: absolute;
+      top: .5em;
+      &.account{
+        right: 1em;
+        >a{
+          background: url("/img/signin.svg");
+        }
+      }
+      &.cart{
+        right: calc(1em + 50px);
+        >a{
+          position: relative;
+          background: url("/img/cart.svg");
+          >span{
+            position: absolute;
+            bottom: 0px;
+            left: -15px;
+            background: red;
+            display: block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            color: white;
+            border-radius: 5px;
+          }
+        }
+      }
+      &.search{
+        right: calc(1em + 150px);
+        >form{
+          >input{
+            padding:.25em;
+            transition: width .2s;
+            &[type="text"]{
+              width: 100px;
+              &:focus{width: 200px;}
+            }
+          }
+        }
+      }
+      >a{
+        display: block;
+        width:30px;
+        height:30px;
+        background-size: contain !important;
+      }
+    }
+  }
+  >nav{
+    >ul{
+      margin:0;
+      padding:16px;
+      display:flex;
+      gap:1em;
+      &>li{
+        position:relative;
+        &:first-of-type:before{
+          content:"🏠";
+        }
+        &:not(:first-of-type):after{
+          content:">";
+          position:absolute;
+          left:-.75em;
+        }
+      }
+    }
+  }
+  >main{
+    padding: 0 2em 2em;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    >iframe{
+      width: 100%;
+    }
+    >section{
+      position: relative;
+      margin: 1em 0;
+      // padding: 1em;
+      // box-shadow: 0 0 10px 1px;
+      border-radius: 5px;
+      width: 100%;
+      text-align: justify;
+      &#contact{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:50px;
+        >h2,>*>h3{width: 100%;}
+        >*{
+          width: calc(50% - 25px);
+          border: 1px dotted;
+          padding: 1em;
+        }
+        >form{
+        }
+        >div{
+          >h3{}
+          >ul{
+            >li{
+              >a{
+                display: block;
+                height: 50px;
+                position: relative;
+                >img{
+                  width:unset !important;
+
+                }
+              }
+            }
+          }
+        }
+      }
+      &#location{
+      }
+      &#kynome{
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      &#fondateurs{
+        >ul{
+          @extend %cards_block;
+        }
+      }
+      &#listLastExpos,&#nowExpo{
+        padding: 1em 0;
+        width: 45%;
+        >h2,>h3,>h4{
+          text-align: center;
+        }
+        >p{
+          text-align: justify;
+          padding: 0 1em;
+        }
+        >img{
+          margin: 1em 0;
+        }
+        >ul{
+          >li{
+            position: absolute;
+            >figure{
+              >img{
+              
+              }
+              >figcaption{
+
+              }
+            }
+          }
+        }
+      }
+    }
+    &#expositionsGallerieArtKynome{
+      >div{}
+      >section{
+        &#exposCalendar{
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items:center;
+          margin-inline: 3em;
+          transition: margin-inline .5s;
+          >a,span{
+            font-size: 8em;
+            transition: font-size .3s;
+          }
+          >span{
+            cursor:not-allowed;
+          }
+          >div{
+            &.datepicker{
+              display: flex;
+              align-items: center;
+              gap: 2em;
+              opacity:1;
+              transition: opacity .4s;
+              >ul{
+
+              }
+            }
+          }
+          &figure#activedExpoImage{
+          }
+          &.expoAlreadySelected:not(:hover){margin-inline:0;}
+          &.expoAlreadySelected:not(:hover)>div{opacity:0;}
+          &.expoAlreadySelected:not(:hover)>a,span{font-size:3em;}
+          &.expoAlreadySelected{
+            >div.datepicker{
+            }
+            >figure#activedExpoImage{
+              z-index: -1;
+              position: absolute;
+              top:0;right:0;bottom:0;left:0;
+              opacity: 1;
+              transition: opacity .4s;
+              >img{height:100%;}
+            }
+            &:hover>figure#activedExpoImage{
+              opacity: 0;
+            }
+          }
+        }
+        &#expoSelected{
+          >h3{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            >span{
+              padding: 0.5em;
+              border-radius: 5px;
+              font-size: .85em;
+              width: 100px;
+              &.btn{}
+              &.status{}
+              &.category{}
+            }
+            >span:first-of-type{}
+            >span:last-of-type{}
+          }
+          >h4{
+            text-align: center;
+            >a{
+              width: 25px;
+              display: inline-block;
+              >img{
+                height: 100%;
+              }
+            }
+          }
+          >div{
+            &.expo_top{}
+            display: flex;
+            gap: 1em;
+            flex-direction: row;
+            height: 300px;
+            border: 1px solid;
+            border-top: 0;
+            box-shadow: 0px 13px 10px 1px;
+            >*{
+              padding: 1em;
+              flex-basis: 100%;
+            }
+            >ul{
+              position: relative;
+              >li{
+                >span{}
+              }
+              &.expo_images{
+                >li{
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  >img{
+                    height: 100%;
+                    object-fit: contain;
+                  }
+                }
+              }
+              &.expo_details{
+                border-style: dotted;
+                border-width: 0 1px;
+              }
+            }
+            >p{}
+            &.expo_bottom{
+              >section{
+                >h3{
+                }
+                >ul{
+                  >li{
+                    >a{
+                      >h3{
+      
+                      }
+                      >img{}
+                    }
+                  }
+                  &.expo_artistes{
+                    border-right: solid;
+                  }
+                  &.expo_oeuvres{
+      
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      >section{
+        >h2{}
+        >form{
+          width: 50%;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap:1em;
+          padding:.5em;
+          >*{
+            padding:.5em;
+            width: 100%;
+          }
+        }
+      }
+    }
+    >article{
+    }
+    .carte{
+    }
+  }
+  >footer{
+    >h4{
+    }
+    >h5,>a{}
+    >h5{
+    }
+    >a{
+    }
+
+    menu{
+      &.SNS{
+        display: flex;
+        gap: 20px;
+        position: relative;
+        width: calc(100% - 266px);
+        >li{
+          &#fb>a{
+            background: url("/img/fb.svg") center center no-repeat;
+          }
+          &#whatsapp>a{
+            background: url("/img/whatsapp.svg") center center no-repeat;
+          }
+          &#ytube>a{
+            background: url("/img/youtube.svg") center center no-repeat;
+          }
+          &#instam>a{
+            background: url("/img/instagram.svg") center center no-repeat;
+          }
+          &#tiktok>a{
+            background: url("/img/tiktok.svg") center center no-repeat;
+          }
+          &#blogB>a{
+            background: url("/img/blog.svg") center center no-repeat;
+            >span{
+              margin-top: 10px;
+              margin: 1.5em -10px;
+              display: inline-block;
+            }
+          }
+          a{
+            background-size: contain !important;
+            position: relative;
+            transition:all .4s;
+            height: 25px;
+            width: 30px;
+            display: inline-block;
+            &:hover{
+              height: 50px;
+              width: 50px;
+            }
+          }
+          // &#blogB{
+          //   img{height: 50px;}
+          // }
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width:$mobile){
+  body{
+    >header{
+      height:75px;
+      text-align: center;
+      >a{>i{}}
+      >img{}
+    }
+    >nav{
+      >form{
+        >input{}
+        >label{>i{}}
+      }
+      >section{
+        >h1{}
+        >p{}
+        >a{}
+      }
+    }
+    >main{
+      >section{}
+      >article{}
+    }
+    >footer{
+      >ul{}
+    }
+  }
+}
+@media all and (min-width:$mobile) and (max-width:$tablette){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}
+@media all and (min-width:$desktop) and (max-width:$tv){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}
+@media all and (min-width:$tv){
+  body{
+    &>header{}
+    &>nav{}
+    &>main{
+      &>section{}
+      &>article{}
+    }
+    &>footer{
+      &>ul{}
+    }
+  }
+}

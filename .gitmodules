@@ -46,3 +46,6 @@
 [submodule "_/--force"]
 	path = _/--force
 	url = git@github.com:webdev-archist/PRODUCTIONs.git
+[submodule "assets/mentor_SCSS_BEM"]
+	path = assets/mentor_SCSS_BEM
+	url = git@github.com:mentor-OC-archist/SCSS___system7-1.git
