@@ -49,3 +49,6 @@
 [submodule "assets/mentor_SCSS_BEM"]
 	path = assets/mentor_SCSS_BEM
 	url = git@github.com:mentor-OC-archist/SCSS___system7-1.git
+[submodule "_/PROJECTS/WEBPROJECT___jctv"]
+	path = _/PROJECTS/WEBPROJECT___jctv
+	url = git@github.com:webdev-archist/WEBPROJECT___jctv.git
