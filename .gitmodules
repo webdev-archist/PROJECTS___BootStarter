@@ -52,3 +52,9 @@
 [submodule "_/PROJECTS/WEBPROJECT___jctv"]
 	path = _/PROJECTS/WEBPROJECT___jctv
 	url = git@github.com:webdev-archist/WEBPROJECT___jctv.git
+[submodule "_/PROJECTS/WEBPROJECT___became"]
+	path = _/PROJECTS/WEBPROJECT___became
+	url = git@github.com:webdev-archist/WEBPROJECT___became.git
+[submodule "_/LEGION"]
+	path = _/LEGION
+	url = git@github.com:webdev-archist/LEGION.git
