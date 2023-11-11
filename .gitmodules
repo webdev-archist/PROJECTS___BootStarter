@@ -43,9 +43,6 @@
 [submodule "_/PROJECTS/quizApp"]
 	path = _/PROJECTS/quizApp
 	url = git@github.com:webdev-archist/PROJECTS___QUIZES.git
-[submodule "_/--force"]
-	path = _/--force
-	url = git@github.com:webdev-archist/PRODUCTIONs.git
 [submodule "assets/mentor_SCSS_BEM"]
 	path = assets/mentor_SCSS_BEM
 	url = git@github.com:mentor-OC-archist/SCSS___system7-1.git
@@ -58,3 +55,6 @@
 [submodule "_/LEGION"]
 	path = _/LEGION
 	url = git@github.com:webdev-archist/LEGION.git
+[submodule "_/PRODUCTIONs"]
+	path = _/PRODUCTIONs
+	url = git@github.com:webdev-archist/PRODUCTIONs.git
