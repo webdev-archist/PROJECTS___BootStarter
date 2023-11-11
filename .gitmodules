@@ -58,3 +58,9 @@
 [submodule "_/PRODUCTIONs"]
 	path = _/PRODUCTIONs
 	url = git@github.com:webdev-archist/PRODUCTIONs.git
+[submodule "_/builders/GrafikChartBuilder"]
+	path = _/builders/GrafikChartBuilder
+	url = git@github.com:webdev-archist/PROJECTS___GrafikChartBuilder.git
+[submodule "_/WEEKLY_WORKOUTs"]
+	path = _/WEEKLY_WORKOUTs
+	url = git@github.com:achicyr/WEEKLY_WORKOUTs.git
